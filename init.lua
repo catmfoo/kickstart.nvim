@@ -855,6 +855,7 @@ require('lazy').setup({
         javascript = { 'prettierd' },
         javascriptreact = { 'prettierd' },
         html = { 'prettierd' },
+        htmlangular = { 'prettierd' },
         php = { 'prettierd' },
         css = { 'prettierd' },
         scss = { 'prettierd' },
