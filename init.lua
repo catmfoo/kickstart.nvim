@@ -107,6 +107,9 @@ vim.o.number = true
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
 
+-- Turn off line wrapping
+vim.o.wrap = false
+
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
 
@@ -738,6 +741,9 @@ require('lazy').setup({
 
           settings = {
             intelephense = {
+              diagnostics = {
+                undefinedFunctions = false,
+              },
               files = {
                 exclude = {
                   '**/.git/**',
@@ -750,7 +756,7 @@ require('lazy').setup({
                   '**/vendor/**/{Tests,tests}/**',
                   '**/.history/**',
                   '**/vendor/**/vendor/**',
-                  '**/vendor/**/fitdegree/**',
+                  '**/vendor/fitdegree/**',
                 },
               },
             },
